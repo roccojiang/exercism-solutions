@@ -1,20 +1,69 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,python,go,haskell
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,go,haskell
+# Created by https://www.toptal.com/developers/gitignore/api/macos,python,go,haskell,c
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,go,haskell,c
+
+### C ###
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
 
 ### Go ###
 # Binaries for programs and plugins
-*.exe
 *.exe~
-*.dll
-*.so
-*.dylib
 
 # Test binary, built with `go test -c`
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
-*.out
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
@@ -27,7 +76,6 @@
 dist
 dist-*
 cabal-dev
-*.o
 *.hi
 *.hie
 *.chi
@@ -93,8 +141,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -172,6 +218,9 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+# poetry
+#poetry.lock
+
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
@@ -183,8 +232,9 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.venv
+# .env
+.env/
+.venv/
 env/
 venv/
 ENV/
@@ -213,7 +263,14 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# operating system-related files
+# file properties cache/storage on macOS
+*.DS_Store
+# thumbnail cache on Windows
+Thumbs.db
+
 # profiling data
 .prof
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,python,go,haskell
+
+# End of https://www.toptal.com/developers/gitignore/api/macos,python,go,haskell,c
