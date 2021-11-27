@@ -271,8 +271,17 @@ cython_debug/
 
 ### Scala ###
 *.class
+.scalafmt.conf
+
+# metals
+*.metals
+*.bloop
+metals.sbt
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+### VSCode ###
+.vscode
 
 # End of https://www.toptal.com/developers/gitignore/api/c,go,scala,macos,python,haskell,intellij
